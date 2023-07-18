@@ -1,0 +1,18 @@
+// membuat komponen React tanpa JSX
+class Btn extends React.Component {
+    render() {
+        let element = React.createElement('h1', {}, 'I do not use JSX!');
+        return element;
+    }
+}
+
+// membuat komponen dengan JSX
+class Btn2 extends React.Component {
+    render() {
+        let element = <h1>I Love JSX!</h1>;
+        return element;
+    }
+}
+
+// render komponen ke HTML
+ReactDOM.render(<Btn/>, document.getElementById("app"));

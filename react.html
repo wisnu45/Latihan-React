@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Belajar Reactjs</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div id="app"></div>
+
+    <script type="text/babel">
+        class Hello extends React.Component { render() { return
+        <h1>Hello World Reactjs!</h1>
+        } } ReactDOM.render(
+
+        <Hello/>, document.getElementById("app"));
+    </script>
+
+</body>
+
+<!-- Kode dimulai dengan mendeklarasikan kelas bernama "Hello" yang memperluas kelas React.Component.
+ Kode kemudian merender teks "Hello World Reactjs!"
+ ke DOM menggunakan ReactDOM.render().
+ Kode membuat output berikut:
+Halo Dunia Reactjs! -->
+
+</html>
